@@ -1,7 +1,7 @@
 import os
 import boto3
 
-from flask import Flask
+from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 USERS_TABLE = os.environ['USERS_TABLE']
