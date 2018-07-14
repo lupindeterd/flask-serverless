@@ -12,6 +12,8 @@ if IS_OFFLINE:
     client = boto3.client(
         'dynamodb',
         region_name='localhost',
+        aws_access_key_id='anything',
+        aws_secret_access_key='anything',
         endpoint_url='http://localhost:8000'
     )
 
